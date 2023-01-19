@@ -81,6 +81,7 @@ export function CartProvider({ children }) {
             const productData = getProductData(cartItem.id);
             totalCost += (productData.price * cartItem.quantity)
         })
+        return totalCost;
     }
 
     const contextValue = {
